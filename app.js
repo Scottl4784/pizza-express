@@ -1,7 +1,8 @@
-//require express package
-const express = require('express');
-//save an express module as 'app'
-const app = express();
+const express = require('express')
+const app = express()
+let hbs = require('hbs')
+
+app.set("view engine", "hbs")
 
 app.get ('/', (req, res) => {
     res.send('Welcome to Pizza Express')
